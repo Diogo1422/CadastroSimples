@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta nome="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" midia="" />
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="titulo">Cadastro de Clientes</h1>
+        <p id="subtitulo">Complete suas Informações</p>
+        <br>
+        <div>
+            <form>
+                <fieldset class="grupo">
+                    <div>
+                        <label for="nome"><strong>Nome:</strong></label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                        <input type="text" name="sobrenome" id="sobrenome" required>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="e-mail"><strong>E-mail:</strong></label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label><strong>Qual sua preferencia ?</strong></label>
+                    <label>
+                        <input type="radio" name="Solteiro" value="Casado">Colcha Solteiro
+                    </label>
+                    <label>
+                        <input type="radio" name="King" value="Super-King">Colcha Casal King
+                    </label>
+                    <label>
+                        <input type="radio" name="Cama" value="Super-King">Colcha Super King
+                    </label>
+                </div>
+                <div>
+                    <label for="tamanho"><u>Tamanho</u></label>
+                    <select id="tamanho">
+                        <option selected disabled value="">Selecione</option>
+                        <option>Médio</option>
+                        <option>Grande</option>
+                        <option>Extra Grande</option>
+                    </select>
+                </div>
+                <fieldset class="grupo">
+                    <div id="checkbox">
+                        <label><strong>Selecione quais colchas você quer escolher</strong></label><br>
+                        <input type="checkbox" id="colcha1" name="colcha1" value="Colcha Teka Marros">
+                        <label for="colcha1">Teka Marros </label>
+                        <input type="checkbox" id="colcha2" name="colcha2" value="Colcha Jazz">
+                        <label for="colcha2">Colcha Jazz </label>
+                        <input type="checkbox" id="colcha3" name="colcha3" value="Colcha Piquete Clássica">
+                        <label for="colcha3">Colcha Piquete Clássica </label>
+                        <input type="checkbox" id="colcha4" name="colcha4" value="Colcha Damask">
+                        <label for="colcha4">Colcha Damask </label>
+
+
+                    </div>
+                </fieldset>
+                <div>
+                    <br>
+                    <label><strong>Se tem preferência por outros modelos ou tamanho nos informe.</strong></label>
+                    <br /><textarea row="6" style="width: 100%" id="modelo" name="modelo"></textarea>
+                </div>
+                <div>
+                    <button id="btnSubmit" type="submit">Concluído </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
